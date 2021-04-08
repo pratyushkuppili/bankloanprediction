@@ -2,22 +2,14 @@ import numpy as np
 import pickle
 from flask import Flask, request, render_template
 import sklearn
-import jsonify
+
 app = Flask(__name__)
 
 model = pickle.load(open("loan_prediction_model.pkl", "rb"))
 @app.route("/")
-def hello():
-    return "Hello World! This is my First deployment"
-
-@app.route("/test")
-def deployment():
-    return "The deployment is done using the Flask and Spyder"
-
-
-@app.route("/template")
 def home():
     return render_template("index.html")
+
 
 @app.route("/predict", methods =["POST"])
 def predict():
