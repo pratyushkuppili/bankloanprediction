@@ -10,7 +10,7 @@
 		<title>BANK LOAN PREDICTION</title>
 	</head>
 	
-	<body>
+	<body style="background-color:grey;">
 	<!-- Java Script -->	
 		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
@@ -21,13 +21,14 @@
 		<nav class="navbar navbar-dark bg-dark">
 			<span class="navbar-brand mb-0 h1">BANK LOAN PREDICTION</span>
 		</nav>
-		<div class="container">
+		<div class="container" style="background-color:DodgerBlue;">
 			<br>
 			<!--Form-->
+			
 				<form action = "{{url_for('predict')}}" method ="POST" >
 				<fieldset>
 				<legend>Loan Prediction Form</legend><br>
-				  <div class="card card-body" >
+				  <div class="card card-body" style="background-color:MediumSeaGreen;">
 					  <div class="form-group  row">
 						<div class="col-sm-3">
 							<label for="ApplicantIncome">ApplicantIncome</label>
@@ -137,6 +138,7 @@
 					 </div>
 				     </div>
 			 </fieldset>
+			
 			</form>
 			
 	</div>
